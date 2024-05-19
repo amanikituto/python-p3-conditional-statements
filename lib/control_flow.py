@@ -53,6 +53,7 @@ def fizzbuzz(number):
 
 
 def calculator(operation, num1, num2):
+    # The rest of your function implementation
     try:
         if operation == "+":
             return num1 + num2
@@ -67,7 +68,7 @@ def calculator(operation, num1, num2):
         else:
             raise ValueError("Invalid operation!")  # Explicitly raise an error
     except (ValueError, ZeroDivisionError) as e:
-        print(f"Error: {e}")
+        print(e)  # Print the error message directly
         return None
     
 import io
